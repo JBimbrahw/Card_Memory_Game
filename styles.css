@@ -1,0 +1,21 @@
+div {
+    text-align: center;
+    font-weight: bold;
+}
+
+body {
+    background-color: #99ddff;
+}
+
+#medium {
+    font-size: 200%;
+}
+
+#big {
+    font-size: 300%;
+}
+
+.inlineimg {
+    display: inline;
+    padding: 10px;
+}
