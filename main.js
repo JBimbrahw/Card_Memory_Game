@@ -45,14 +45,10 @@ function PlayMemoryGame(elementid, square)
     if(numpicsclicked == 0)
     {
         numpicsclicked++;
-        document.getElementById("debugtext").innerHTML = numpicsclicked;
-        document.getElementById("debugtext2").innerHTML = "FIRST CLICK";
     }
     else if(numpicsclicked == 1 && elementid != elementid1)
     {
         numpicsclicked++;
-        document.getElementById("debugtext").innerHTML = numpicsclicked;
-        document.getElementById("debugtext2").innerHTML = "SECOND CLICK";
     }
 
     if(numpicsclicked == 1)
@@ -69,8 +65,6 @@ function PlayMemoryGame(elementid, square)
         if(pictureone == picturetwo)
         {
             numpicsclicked = 0;
-            document.getElementById("debugtext").innerHTML = numpicsclicked;
-            document.getElementById("debugtext2").innerHTML = "MATCHING IMAGES";
         }
         else
         {
@@ -83,6 +77,4 @@ function HidePictures(elementid1, elementid2) {
     document.getElementById(elementid1).src="redsq.png";
     document.getElementById(elementid2).src="redsq.png";
     numpicsclicked = 0;
-    document.getElementById("debugtext").innerHTML = numpicsclicked;
-    document.getElementById("debugtext2").innerHTML = "HIDING IMAGES";
 }
